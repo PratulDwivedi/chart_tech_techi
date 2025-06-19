@@ -34,3 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# Setup new app steps
+
+## Create Next.js app with API routes
+npx create-next-app@latest tech-techi-chart --typescript --tailwind --eslint --app
+
+cd tech-techi-chart
+
+## Install required packages
+npm install chart.js chartjs-node-canvas canvas
+npm install @types/node
+
+## For client-side rendering (optional)
+npm install react-chartjs-2
