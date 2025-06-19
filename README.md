@@ -54,3 +54,5 @@ npm install react-chartjs-2
 https://vercel.com/pratuldwivedis-projects/tech-tech-chart
 
 https://tech-tech-chart.vercel.app/
+
+## Need to map custom domain
