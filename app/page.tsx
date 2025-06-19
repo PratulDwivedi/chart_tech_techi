@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [config, setConfig] = useState(`{
@@ -176,12 +177,12 @@ export default function Home() {
       <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
         Chart API Service
       </h1>
-      
+
       <div className="grid md:grid-cols-2 gap-8">
         {/* Configuration Panel */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold mb-4">Chart Configuration</h2>
-          
+
           {/* Preset buttons */}
           <div className="flex flex-wrap gap-2 mb-4">
             {Object.entries(presetConfigs).map(([key, preset]) => (
@@ -249,13 +250,16 @@ export default function Home() {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold mb-4">Preview</h2>
           <div className="border rounded p-4 bg-white">
-            <img
+            <Image
               src={generateChartUrl()}
               alt="Generated Chart"
+              width={parseInt(width)}
+              height={parseInt(height)}
               className="w-full h-auto"
               onError={(e) => {
                 e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkVycm9yIGxvYWRpbmcgY2hhcnQ8L3RleHQ+PC9zdmc+';
               }}
+              unoptimized
             />
           </div>
 
