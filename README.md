@@ -39,7 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # Setup new app steps
 
 ## Create Next.js app with API routes
-npx create-next-app@latest tech-techi-chart --typescript --tailwind --eslint --app
+npx create-next-app@latest chart-tech-techi --typescript --tailwind --eslint --app
 
 cd tech-techi-chart
 
