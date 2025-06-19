@@ -49,3 +49,8 @@ npm install @types/node
 
 ## For client-side rendering (optional)
 npm install react-chartjs-2
+
+## Deployed at Vercel
+https://vercel.com/pratuldwivedis-projects/tech-tech-chart
+
+https://tech-tech-chart.vercel.app/
