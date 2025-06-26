@@ -39,7 +39,8 @@ export default function Home() {
   const [height, setHeight] = useState('600');
 
   const generateChartUrl = () => {
-    const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+    const baseUrl =
+      typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
     const params = new URLSearchParams({
       c: config,
       w: width,
